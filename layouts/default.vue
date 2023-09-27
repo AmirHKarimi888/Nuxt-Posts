@@ -1,8 +1,16 @@
 <template>
-    <div>
-        default
+    <header>
+
+    </header>
+    
+    <main>
+        <Admin />
         <NuxtPage />
-    </div>
+    </main>
+
+    <footer>
+
+    </footer>
 </template>
 
 <script setup>

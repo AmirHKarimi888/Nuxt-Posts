@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "created": "2023/9/27 At 23:51",
+      "updated": "2023/9/28 At 0:36",
+      "title": "Post One",
+      "poster": "https://wallpapershome.com/images/pages/ico_h/25291.jpeg",
+      "description": "1",
+      "likedBy": [],
+      "comments": []
+    },
+    {
+      "id": 2,
+      "created": "2023/9/27 At 23:53",
+      "updated": "2023/9/28 At 0:37",
+      "title": "Post Two",
+      "poster": "https://wallpapershome.com/images/pages/ico_h/25299.jpeg",
+      "description": "post two",
+      "likedBy": [],
+      "comments": []
+    },
+    {
+      "id": 3,
+      "created": "2023/9/28 At 0:37",
+      "updated": "2023/9/28 At 0:37",
+      "title": "Post Three",
+      "poster": "https://wallpapershome.com/images/pages/ico_h/25283.jpeg",
+      "description": "post three",
+      "likedBy": [],
+      "comments": []
+    }
+  ]
+}
