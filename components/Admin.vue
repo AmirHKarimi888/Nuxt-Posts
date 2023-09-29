@@ -1,5 +1,5 @@
 <template>
-    <div class="admin w-full h-screen fixed top-0 left-0 backdrop-blur-sm overflow-y-scroll">
+    <div @click.self="toggleModal('adminModal')" id="adminModal" class="admin w-full h-screen fixed top-0 left-0 backdrop-blur-sm overflow-y-scroll hidden">
         <div v-if="checkPassword !== password ? true : false"
             class="mx-auto text-center lg:w-[70%] md:w-[75%] sm:w-[81%] max-sm:w-[90%] mt-[200px] p-6 border border-gray-400 bg-gray-200 rounded-lg">
             <input type="text" v-model="checkPassword" class="border border-gray-400 rounded-lg p-1 my-1"
@@ -31,6 +31,9 @@
 
 <script setup>
 import { url } from "~/api/index";
+
+const { toggleModal } = defineProps(["toggleModal"]);
+
 const password = "123";
 const checkPassword = ref("");
 
