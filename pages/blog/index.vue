@@ -34,7 +34,6 @@ if(rawPosts.length < 7) {
 } else {
     posts.value = rawPosts;
     posts.value = posts.value.slice(posts.value.length - 3, posts.value.length);
-    posts.value = posts.value.reverse();
 }
 </script>
 
