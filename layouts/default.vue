@@ -4,10 +4,8 @@
     </header>
 
     <main>
-        <ClientOnly>
-            <Admin :toggleModal="toggleModal" />
-            <NuxtPage :rawPosts="rawPosts" :refresh="refresh" />
-        </ClientOnly>
+        <Admin :toggleModal="toggleModal" />
+        <NuxtPage :rawPosts="rawPosts" :refresh="refresh" />
     </main>
 
     <footer>
@@ -16,7 +14,6 @@
 </template>
 
 <script setup>
-import { url } from "~/api/index";
 
 const toggleModal = (id) => {
     const element = document.getElementById(id);
@@ -28,11 +25,6 @@ const toggleModal = (id) => {
     }
 }
 
-const rawPosts = ref([]);
-
-const { data, refresh } = await useFetch(url + "posts");
-
-rawPosts.value = data.value.reverse();
 </script>
 
 <style lang="scss" scoped></style>

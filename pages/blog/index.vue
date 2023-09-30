@@ -27,12 +27,13 @@
 </template>
 
 <script setup>
+import { url } from "~~/api"
 const posts = ref([]);
-const { rawPosts, refresh } = defineProps(["rawPosts", "refresh"]);
+const { data: rawPosts, refresh } = await useFetch(url + "posts");
 if(rawPosts.length < 7) {
-    posts.value = rawPosts;
+    posts.value = rawPosts.value;
 } else {
-    posts.value = rawPosts;
+    posts.value = rawPosts.value;
     posts.value = posts.value.slice(posts.value.length - 3, posts.value.length);
 }
 </script>

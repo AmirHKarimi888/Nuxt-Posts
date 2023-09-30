@@ -27,15 +27,18 @@
 </template>
 
 <script setup>
+import { url } from "~~/api"
+
 const posts = ref([]);
-const { rawPosts, refresh } = defineProps(["rawPosts", "refresh"]);
+const { data: rawPosts, refresh } = await useFetch(url + "posts");
 
 const { id: pageNumber } = useRoute().params;
 
 if(rawPosts.length < 4) {
-    posts.value = rawPosts;
+    posts.value = rawPosts.value;
 } else {
-    posts.value = rawPosts;
+    posts.value = rawPosts.value;
+    posts.value = posts.value.reverse();
     posts.value = posts.value.slice((3*parseInt(pageNumber)) - 3, (3*parseInt(pageNumber)));
 }
 
