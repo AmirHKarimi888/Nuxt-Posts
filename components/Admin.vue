@@ -69,6 +69,7 @@ const createPost = () => {
             updated: "",
             title: title.value,
             poster: poster.value,
+            views: 0,
             description: descr.value,
             likedBy: [],
             comments: []
