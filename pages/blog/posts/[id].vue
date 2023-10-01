@@ -4,7 +4,7 @@
     </Head>
     <div>
         <div class="my-[200px] mx-auto rounded-sm lg:w-[60%] md:w-[75%] sm:w-[84%] max-sm:w-[90%] border border-gray-400 shadow-lg shadow-gray-300 p-8">
-            <div class="header mx-auto p-3 bg-gray-200 grid grid-cols-2">
+            <div class="header mx-auto p-3 bg-gray-100 grid grid-cols-2">
                 <p class="text-center"><i class="fa fa-heart mx-1 mt-1"></i>{{ post.likedBy.length }}</p>
                 <p class="text-center"><i class="fa fa-eye mx-1 mt-1"></i>{{ post.views }}</p>
             </div>
