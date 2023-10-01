@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <Title>{{ post.title }}</Title>
+    </Head>
     <div>
         <div class="my-[200px] mx-auto rounded-sm lg:w-[60%] md:w-[75%] sm:w-[84%] max-sm:w-[90%] border border-gray-400 shadow-lg shadow-gray-300 p-8">
             <div class="header mx-auto p-3 bg-gray-200 grid grid-cols-2 max-sm:grid-cols-1">
