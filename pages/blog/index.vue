@@ -35,9 +35,11 @@ const posts = ref([]);
 const { data: rawPosts, refresh } = await useFetch(url + "posts");
 if(rawPosts.length < 7) {
     posts.value = rawPosts.value;
+    posts.value = posts.value.reverse();
 } else {
     posts.value = rawPosts.value;
     posts.value = posts.value.slice(posts.value.length - 3, posts.value.length);
+posts.value = posts.value.reverse();
 }
 </script>
 
