@@ -9,6 +9,9 @@
                 :key="post.id">
                 <img :src="post.poster" alt="" class="w-[100%] aspect-square">
                 <p class="mt-1">{{ post.title }}</p>
+                <p class="w-[50%] mx-auto p-2 rounded-lg bg-cyan-700 text-white my-1">
+                    <NuxtLink :to="`/blog/posts/${post.id}`">Go To Page</NuxtLink>
+                </p>
             </li>
         </ul>
 
